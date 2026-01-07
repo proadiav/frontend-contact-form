@@ -226,7 +226,8 @@
                 const response = await fetch(webhookUrl, {
                     method: 'POST',
                     headers: {
-                        'Content-Type': 'application/json'
+                        'Content-Type': 'application/json',
+                        "x-api-key": "orra"
                     },
                     body: JSON.stringify({
                         name: name,
@@ -257,5 +258,6 @@
         }
     </script>
 </body>
+
 
 </html>
