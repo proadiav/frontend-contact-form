@@ -1,0 +1,11 @@
+services:
+  frontend:
+    build: .
+    container_name: frontend-contact
+    restart: unless-stopped
+    networks:
+      - infra-n8n_web
+
+networks:
+  infra-n8n_web:
+    external: true
